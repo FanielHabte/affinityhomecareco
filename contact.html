@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Affinity Home Care Co. to request a placement, become a host home provider, or submit a referral. Colorado's licensed host home agency for individuals with developmental disabilities.">
+  <meta name="robots" content="index, follow">
+  <title>Contact Us | Affinity Home Care Co.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/contact.css">
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="nav__logo" aria-label="Affinity Home Care Co. — home">
+          <span class="nav__logo-name">Affinity Home Care Co.</span>
+          <span class="nav__logo-tag">Licensed Host Home Agency · Colorado</span>
+        </a>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav__links" id="nav-links">
+          <a href="index.html"     class="nav__link">Home</a>
+          <a href="about.html"     class="nav__link">About</a>
+          <a href="services.html"  class="nav__link">Services</a>
+          <a href="families.html"  class="nav__link">For Families</a>
+          <a href="providers.html" class="nav__link">Become a Provider</a>
+          <a href="contact.html"   class="nav__cta">Contact Us</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Main ── -->
+  <main>
+
+    <!-- Page hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero__label">Get in Touch</div>
+        <h1 class="page-hero__title">Contact Us</h1>
+        <p class="page-hero__desc">Questions, referrals, or applications — we respond within one business day.</p>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Info sidebar -->
+          <aside class="contact-info reveal">
+            <h2 class="contact-info__title">Reach Us Directly</h2>
+
+            <div class="contact-detail">
+              <div class="contact-detail__icon">📞</div>
+              <div>
+                <div class="contact-detail__label">Phone</div>
+                <div class="contact-detail__value"><a href="tel:+17205551234">(720) 555-1234</a></div>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail__icon">✉️</div>
+              <div>
+                <div class="contact-detail__label">Email</div>
+                <div class="contact-detail__value"><a href="mailto:hello@affinityhomecareco.com">hello@affinityhomecareco.com</a></div>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail__icon">📍</div>
+              <div>
+                <div class="contact-detail__label">Service Area</div>
+                <div class="contact-detail__value">Colorado, USA</div>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail__icon">🕐</div>
+              <div>
+                <div class="contact-detail__label">Office Hours</div>
+                <div class="contact-detail__value">Mon – Fri, 9am – 5pm MT</div>
+              </div>
+            </div>
+
+            <div class="contact-response-note">
+              ✅ We respond to all inquiries within one business day.
+            </div>
+          </aside>
+
+          <!-- Form -->
+          <div class="contact-form-wrap reveal reveal-delay-1">
+            <h2 class="contact-form-title">Send Us a Message</h2>
+            <p class="contact-form-subtitle">Tell us a bit about your situation and we'll follow up with the right information.</p>
+
+            <!--
+              To activate form submissions:
+              1. Create a free account at formspree.io
+              2. Create a new form and copy your form ID
+              3. Replace YOUR_FORM_ID below with the actual ID
+              Example: action="https://formspree.io/f/xpzgwqab"
+            -->
+            <form
+              class="form"
+              data-contact-form
+              action="https://formspree.io/f/YOUR_FORM_ID"
+              method="POST"
+              novalidate
+            >
+              <div class="form__notice form__notice--success"></div>
+              <div class="form__notice form__notice--error"></div>
+
+              <div class="form__row">
+                <div class="form__field">
+                  <label class="form__label form__label--required" for="first-name">First Name</label>
+                  <input class="form__input" id="first-name" name="first_name" type="text" placeholder="Jane" required>
+                  <span class="form__error"></span>
+                </div>
+                <div class="form__field">
+                  <label class="form__label form__label--required" for="last-name">Last Name</label>
+                  <input class="form__input" id="last-name" name="last_name" type="text" placeholder="Smith" required>
+                  <span class="form__error"></span>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="form__field">
+                  <label class="form__label form__label--required" for="email">Email Address</label>
+                  <input class="form__input" id="email" name="email" type="email" placeholder="jane@example.com" required>
+                  <span class="form__error"></span>
+                </div>
+                <div class="form__field">
+                  <label class="form__label" for="phone">Phone Number</label>
+                  <input class="form__input" id="phone" name="phone" type="tel" placeholder="(720) 555-0000">
+                  <span class="form__error"></span>
+                </div>
+              </div>
+
+              <div class="form__field">
+                <label class="form__label form__label--required" for="reason">I am reaching out about</label>
+                <select class="form__select" id="reason" name="reason" required>
+                  <option value="" disabled selected>Select a reason…</option>
+                  <option value="finding-care">Finding care for a loved one</option>
+                  <option value="becoming-provider">Becoming a host home provider</option>
+                  <option value="case-manager-referral">Submitting a referral (Case Manager)</option>
+                  <option value="respite-care">Respite care request</option>
+                  <option value="general">General inquiry</option>
+                </select>
+                <span class="form__error"></span>
+              </div>
+
+              <div class="form__field">
+                <label class="form__label form__label--required" for="message">Message</label>
+                <textarea class="form__textarea" id="message" name="message" placeholder="Tell us about your situation, questions, or needs…" required></textarea>
+                <span class="form__error"></span>
+              </div>
+
+              <div>
+                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+              </div>
+
+              <p style="font-size: var(--text-xs); color: var(--clr-text-muted); margin-top: var(--sp-2);">
+                Your information is kept private and never shared with third parties.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="footer__brand-name">Affinity Home Care Co.</div>
+          <p class="footer__brand-desc">Colorado's trusted host home agency connecting individuals with developmental disabilities to caring, qualified providers through Medicaid waiver programs.</p>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Navigate</div>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Programs</div>
+          <a href="families.html">For Families</a>
+          <a href="providers.html">Become a Provider</a>
+          <a href="services.html#waivers">Medicaid Waivers</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Contact</div>
+          <div class="footer__contact-item">📍 Colorado, USA</div>
+          <div class="footer__contact-item">📞 <a href="tel:+17205551234">(720) 555-1234</a></div>
+          <div class="footer__contact-item">✉️ <a href="mailto:hello@affinityhomecareco.com">hello@affinityhomecareco.com</a></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2025 Affinity Home Care Co. All rights reserved.</span>
+        <span class="footer__badge">🏥 Licensed PASA · Colorado HCPF</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

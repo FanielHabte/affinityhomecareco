@@ -1,0 +1,73 @@
+:root {
+  /* ── Colors ── */
+  --clr-primary:       #E86C5C;
+  --clr-primary-light: #FFE5D9;
+  --clr-primary-dark:  #C85A4A;
+  --clr-accent:        #4ECDC4;
+  --clr-accent-dark:   #3AB5AC;
+  --clr-bg:            #FFF9F5;
+  --clr-bg-alt:        #FFF2EC;
+  --clr-surface:       #FFFFFF;
+  --clr-text:          #2C3E50;
+  --clr-text-muted:    #6B7280;
+  --clr-border:        #E8DDD8;
+  --clr-success:       #22C55E;
+  --clr-error:         #EF4444;
+
+  /* ── Typography ── */
+  --font-heading: 'Crimson Pro', Georgia, serif;
+  --font-body:    'Outfit', system-ui, -apple-system, sans-serif;
+
+  /* ── Font sizes ── */
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  clamp(2.4rem, 5vw, 3.4rem);
+
+  /* ── Font weights ── */
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* ── Spacing ── */
+  --sp-1:  0.25rem;
+  --sp-2:  0.5rem;
+  --sp-3:  0.75rem;
+  --sp-4:  1rem;
+  --sp-6:  1.5rem;
+  --sp-8:  2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+  --sp-20: 5rem;
+  --sp-24: 6rem;
+
+  /* ── Border radius ── */
+  --radius-sm:   0.25rem;
+  --radius-md:   0.5rem;
+  --radius-lg:   1rem;
+  --radius-xl:   1.5rem;
+  --radius-full: 9999px;
+
+  /* ── Shadows ── */
+  --shadow-xs: 0 1px 2px rgba(44, 62, 80, 0.06);
+  --shadow-sm: 0 1px 4px rgba(44, 62, 80, 0.08);
+  --shadow-md: 0 4px 16px rgba(44, 62, 80, 0.10);
+  --shadow-lg: 0 8px 32px rgba(44, 62, 80, 0.14);
+
+  /* ── Transitions ── */
+  --t-fast: 150ms ease;
+  --t-base: 250ms ease;
+  --t-slow: 400ms ease;
+
+  /* ── Layout ── */
+  --container-max: 1200px;
+  --container-pad: clamp(1rem, 4vw, 2rem);
+  --nav-height:    72px;
+}

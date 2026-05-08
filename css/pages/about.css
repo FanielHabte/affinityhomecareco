@@ -1,0 +1,60 @@
+@import '../tokens.css';
+
+.about-mission {
+  background: var(--clr-bg-alt);
+  border-radius: var(--radius-xl);
+  padding: var(--sp-12);
+  border-left: 4px solid var(--clr-primary);
+  margin-bottom: var(--sp-16);
+}
+
+.about-mission__quote {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  line-height: 1.45;
+  font-style: italic;
+  color: var(--clr-text);
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-16);
+  align-items: start;
+}
+
+.license-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-4) var(--sp-6);
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  margin-top: var(--sp-8);
+}
+
+.license-badge__icon { font-size: 1.8rem; }
+
+.license-badge__text strong {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+}
+
+.license-badge__text span {
+  font-size: var(--text-xs);
+  color: var(--clr-text-muted);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-6);
+}
+
+@media (max-width: 900px) {
+  .about-layout { grid-template-columns: 1fr; }
+  .values-grid  { grid-template-columns: 1fr; }
+}

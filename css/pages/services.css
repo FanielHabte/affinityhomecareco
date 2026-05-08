@@ -1,0 +1,115 @@
+@import '../tokens.css';
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-6);
+}
+
+.service-card {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  transition: box-shadow var(--t-base), transform var(--t-base);
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.service-card__header {
+  padding: var(--sp-8);
+  background: var(--clr-bg-alt);
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.service-card__icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--sp-4);
+}
+
+.service-card__title {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--sp-2);
+}
+
+.service-card__body {
+  padding: var(--sp-8);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.service-card__desc {
+  font-size: var(--text-sm);
+  color: var(--clr-text-muted);
+  line-height: 1.8;
+  margin-bottom: var(--sp-6);
+}
+
+.service-card__features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-8);
+  flex: 1;
+}
+
+.service-card__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-2);
+  font-size: var(--text-sm);
+}
+
+.service-card__feature::before {
+  content: '✓';
+  color: var(--clr-accent-dark);
+  font-weight: var(--weight-bold);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Waiver cards */
+.waiver-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-4);
+}
+
+.waiver-card {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-6) var(--sp-4);
+  text-align: center;
+  transition: border-color var(--t-fast), box-shadow var(--t-fast);
+}
+
+.waiver-card:hover {
+  border-color: var(--clr-accent);
+  box-shadow: var(--shadow-sm);
+}
+
+.waiver-card__code {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-bold);
+  color: var(--clr-accent-dark);
+  font-family: var(--font-heading);
+  margin-bottom: var(--sp-1);
+}
+
+.waiver-card__name {
+  font-size: var(--text-xs);
+  color: var(--clr-text-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .waiver-grid   { grid-template-columns: repeat(2, 1fr); }
+}

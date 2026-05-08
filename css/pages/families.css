@@ -1,0 +1,130 @@
+@import '../tokens.css';
+
+.eligibility-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-12);
+  align-items: start;
+}
+
+.eligibility-card {
+  background: var(--clr-bg-alt);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-xl);
+  padding: var(--sp-8);
+}
+
+.eligibility-card__title {
+  font-size: var(--text-xl);
+  margin-bottom: var(--sp-6);
+}
+
+/* Horizontal step line */
+.journey-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--sp-4);
+  position: relative;
+}
+
+.journey-steps::before {
+  content: '';
+  position: absolute;
+  top: 19px;
+  left: calc(10% + 20px);
+  right: calc(10% + 20px);
+  height: 2px;
+  background: var(--clr-border);
+  z-index: 0;
+}
+
+.journey-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.journey-step__num {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: var(--clr-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--weight-bold);
+  font-size: var(--text-sm);
+  margin-bottom: var(--sp-3);
+  box-shadow: 0 0 0 4px var(--clr-bg);
+}
+
+.journey-step__title {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  margin-bottom: var(--sp-1);
+}
+
+.journey-step__desc {
+  font-size: var(--text-xs);
+  color: var(--clr-text-muted);
+  line-height: 1.5;
+}
+
+/* Families CTA */
+.families-cta {
+  background: linear-gradient(135deg, var(--clr-accent) 0%, var(--clr-accent-dark) 100%);
+  border-radius: var(--radius-xl);
+  padding: var(--sp-16);
+  text-align: center;
+}
+
+.families-cta__title {
+  color: white;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  margin-bottom: var(--sp-4);
+}
+
+.families-cta__desc {
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0 auto var(--sp-8);
+  max-width: 50ch;
+}
+
+.families-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  justify-content: center;
+}
+
+.families-cta .btn-outline {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+.families-cta .btn-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 900px) {
+  .eligibility-layout { grid-template-columns: 1fr; }
+
+  .journey-steps {
+    grid-template-columns: 1fr;
+    gap: var(--sp-6);
+  }
+
+  .journey-steps::before { display: none; }
+
+  .journey-step {
+    flex-direction: row;
+    text-align: left;
+    gap: var(--sp-4);
+  }
+
+  .journey-step__num { margin-bottom: 0; flex-shrink: 0; }
+}
