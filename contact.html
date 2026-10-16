@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact | Affinity Home Care</title>
+  <meta name="description" content="Contact Affinity Home Care about finding care, making a referral, or becoming a host home provider.">
+  <meta property="og:title" content="Contact | Affinity Home Care">
+  <meta property="og:description" content="Contact Affinity Home Care about finding care, making a referral, or becoming a host home provider.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/home-hero.jpg">
+  <meta name="theme-color" content="#F4F3EE">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..600&family=Outfit:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="wordmark" href="index.html" aria-label="Affinity Home Care, home">
+        <span class="wordmark-name">Affinity</span>
+        <span class="wordmark-sub">Home Care</span>
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="families.html">For Families</a>
+        <a href="providers.html">Become a Provider</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" style="padding-bottom:40px">
+      <div class="wrap hero-simple">
+        <div class="stack">
+          <p class="eyebrow">Contact</p>
+          <h1>Let's talk.</h1>
+          <p class="lead">Tell us a little about what you're looking for, and a coordinator will follow up.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap contact-grid">
+        <div>
+          <form class="form" id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
+            <input type="hidden" name="form-name" value="contact">
+            <p class="honeypot"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <div class="field">
+              <label for="topic">I'm reaching out about</label>
+              <select id="topic" name="topic" required aria-describedby="topic-error">
+                <option value="">Choose one</option>
+                <option value="care">Finding care for a loved one</option>
+                <option value="referral">Referring someone (case manager)</option>
+                <option value="provider">Becoming a host home provider</option>
+                <option value="other">Something else</option>
+              </select>
+              <p class="error-text" id="topic-error" hidden></p>
+            </div>
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+              <p class="error-text" id="name-error" hidden></p>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error">
+                <p class="error-text" id="email-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="phone">Phone <span class="hint">(optional)</span></label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel">
+              </div>
+            </div>
+            <div class="field">
+              <label for="message">Anything you'd like us to know <span class="hint">(optional)</span></label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+            <div>
+              <button class="btn btn-primary" type="submit">Send message<svg class="arrow" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            </div>
+          </form>
+          <div class="form-status" id="form-status" role="status" tabindex="-1" hidden></div>
+        </div>
+        <aside class="contact-side" aria-label="Other ways to reach us">
+          <figure class="photo "><img src="assets/images/contact-coordinator.jpg" alt="A smiling coordinator at her desk" width="1000" height="1500" decoding="async" loading="lazy" style="object-position: center 25%"></figure>
+          <div class="contact-item">
+            <p class="eyebrow">Call</p>
+            <p class="value"><a href="tel:+17205551234" style="text-decoration:none">(720) 555-1234</a></p>
+            <p class="muted">Monday to Friday, business hours</p>
+          </div>
+          <div class="contact-item">
+            <p class="eyebrow">Email</p>
+            <p class="value"><a href="mailto:hello@affinityhomecare.co" style="text-decoration:none">hello@affinityhomecare.co</a></p>
+          </div>
+          <div class="contact-item">
+            <p class="eyebrow">Based in</p>
+            <p class="value">Colorado</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-row">
+        <div class="stack-sm">
+          <a class="wordmark" href="index.html" aria-label="Affinity Home Care, home">
+            <span class="wordmark-name">Affinity</span>
+            <span class="wordmark-sub">Home Care</span>
+          </a>
+          <p style="max-width:28em">Host home placements for adults with intellectual and developmental disabilities in Colorado, funded through Medicaid waivers.</p>
+        </div>
+        <div>
+          <h2>Pages</h2>
+          <ul>
+            <li><a href="families.html">For Families</a></li>
+            <li><a href="providers.html">Become a Provider</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="tel:+17205551234">(720) 555-1234</a></li>
+            <li><a href="mailto:hello@affinityhomecare.co">hello@affinityhomecare.co</a></li>
+            <li><a href="contact.html">Send us a message</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-legal">© 2026 Affinity Home Care. Licensed Program Approved Service Agency (PASA) in Colorado.</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
